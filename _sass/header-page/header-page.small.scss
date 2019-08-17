@@ -1,0 +1,14 @@
+@import "variables.small";
+
+.HeaderPage {
+    & {
+        padding: $headerPageInternalVerticalMargin $headerPageInternalHorizintalMargin;
+        margin-bottom: $headerPageExternalVerticalMargin;
+    }
+
+    &-title {
+        font-size: $headerPageTitleFontSize;
+        text-align: center;
+        margin:auto;
+    }
+}

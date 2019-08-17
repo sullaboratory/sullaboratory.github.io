@@ -1,0 +1,7 @@
+@import "variables.medium";
+
+.PostsList {
+    &-item {
+        margin-bottom: $postsListItemExternalVerticalMargin;
+    }
+}

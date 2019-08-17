@@ -1,0 +1,12 @@
+@import "variables.medium";
+
+.HeaderPage {
+    & {
+        padding: $headerPageInternalVerticalMargin $headerPageInternalHorizintalMargin;
+        margin-bottom: $headerPageExternalVerticalMargin;
+    }
+
+    &-title {
+        font-size: $headerPageTitleFontSize;
+    }
+}

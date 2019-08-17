@@ -1,0 +1,8 @@
+@import "variables.medium";
+
+.PostPreview {
+    &-title {
+        font-size: $postPreviewTitleFontSize;
+        margin-bottom: $postPreviewTitleVerticalMargin;
+    }
+}

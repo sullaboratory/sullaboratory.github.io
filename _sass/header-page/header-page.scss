@@ -1,0 +1,16 @@
+@import "variables";
+
+.HeaderPage {
+    & {
+        background: $headerPageBackground;
+        padding: $headerPageInternalVerticalMargin $headerPageInternalHorizintalMargin;
+        margin-bottom: $headerPageExternalVerticalMargin;
+        color: $headerPageFontColor;
+    }
+
+    &-title {
+        font-size: $headerPageTitleFontSize;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}

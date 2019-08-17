@@ -1,0 +1,9 @@
+@import "variables";
+
+.PostPreview {
+    &-title {
+        font-size: $postPreviewTitleFontSize;
+        margin-bottom: $postPreviewTitleVerticalMargin;
+        color: $postPreviewTitleFontColor;
+    }
+}

@@ -1,0 +1,71 @@
+$themeColor: #4a69bd;
+$lightThemeColor: #6a89cc;
+
+$defaultFontColor: #000000;
+$reverseFontColor: #ffffff;
+
+$mainFontFamily: Arial, sans-serif;
+
+$defaultFontSize: 16px;
+$defaultLineHeight: 1.3em;
+
+$mediumBreakpoint: 1280px;
+$smallBreakpoint: 480px;
+
+@function pxToVw($pixels) {
+    $viewportwidth: 375px;
+
+    @return ($pixels*100/$viewportwidth) * 1vw;
+  }
+
+body {
+    font-size: $defaultFontSize;
+    line-height: $defaultLineHeight;
+    color: $defaultFontColor;
+    font-family: $mainFontFamily;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+@import "content-page/content-page";
+@import "header-page/header-page";
+@import "post-preview/post-preview";
+@import "posts-list/posts-list";
+
+
+@media all and (max-width: $mediumBreakpoint){
+
+    $defaultFontSize: 18px;
+    $defaultLineHeight: 1.3em;
+
+    body {
+        font-size: $defaultFontSize;
+        line-height: $defaultLineHeight;
+    }
+
+    @import "content-page/content-page.medium";
+    @import "header-page/header-page.medium";
+    @import "post-preview/post-preview.medium";
+    @import "posts-list/posts-list.medium";
+}
+
+@media all and (max-width: $smallBreakpoint){
+
+    $defaultFontSize: pxToVw(20px);
+    $defaultLineHeight: 1.2em;
+
+    body {
+        font-size: $defaultFontSize;
+        line-height: $defaultLineHeight;
+    }
+
+    @import "content-page/content-page.small";
+    @import "header-page/header-page.small";
+    @import "post-preview/post-preview.small";
+    @import "posts-list/posts-list.small";
+}
